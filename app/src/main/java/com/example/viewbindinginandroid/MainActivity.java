@@ -14,9 +14,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activityMainBinding.getRoot());
 
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(activityMainBinding.getRoot());
+
 
         activityMainBinding.t1.setText("Hello this is the feature of ViewBinding");
         activityMainBinding.btnNext.setOnClickListener(new View.OnClickListener() {
